@@ -1,0 +1,5 @@
+An example code that illustrates the application of the algorithm from
+ 
+S. D. Babacan, R. Molina, A. K. Katsaggelos. "Bayesian Compressive Sensing using Laplace Priors," IEEE Transactions on Image Processing, 19(1):2010.
+
+Input settings, as well as the the forward model func() are 'hard-wired' in the code. The code directly relies on uqtk and bcs libraries from uqtk_dist.

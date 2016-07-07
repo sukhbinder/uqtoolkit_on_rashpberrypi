@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+
+\special{papersize=8.5in,11in}
+
+\usepackage{cite}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{pslatex}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{hyperref}
+
+
+\input{def}
+
+\textwidth 16.0cm
+\textheight 23.0cm
+\topmargin 0cm
+\headheight 0cm
+\headsep 0cm
+\topskip 0cm
+\oddsidemargin 0.00cm
+\evensidemargin 0.00cm
+%\addtolength{\textheight}{1in}
+
+%\renewcommand{\baselinestretch}{1.5}\small\normalsize % double spacing
+%\renewcommand{\baselinestretch}{0.7}\small\normalsize % single spacing
+%\small % smaller font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\centerline{\Large\bf UQTk Manual: Surrogate construction and global sensitivity analysis} 
+\medskip
+\centerline{UQTk group}
+\centerline{Sandia National Laboratories, Livermore, CA}
+\centerline{\today}
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Overview}
+\label{sec:uqoverview}
+UQTk (\url{www.sandia.gov/UQToolkit}) is a lightweight C++ library, developed in Sandia National Laboratories, California, 
+that primarily offers tools for surrogate model construction and uncertainty propagation with 
+polynomial chaos expansions (PCE), as well as model calibration and validation.
+
+UQTk Version 2.0 is released under the GNU Lesser General Public License (LGPL). 
+
+\section{Download and compilation}
+\label{sec:uqdownload}
+
+A tar-ball with the source code, tutorials, examples and documentation can be 
+downloaded from \url{www.sandia.gov/UQToolkit/uqtk\_download.html}
+
+Before compilation, one should set a file \texttt{config/config.site} with computer-specific compilation options. 
+Both C++ and Fortran compilers are required. The file \texttt{config/config.gnu} provides a good 
+starting point as a sample configuration file.
+
+Compilation is simply invoked by 
+\begin{ShellCmd}
+make all
+\end{ShellCmd}
+
+
+\section{Structure}
+\label{sec:uqstruct}
+
+Below we present parts of the UQTk structure that are relevant to the current study.
+
+\begin{itemize}
+\item \texttt{config}: configuration file location
+\item \texttt{doc\_cpp}: doxygen documentation
+\item \texttt{src\_cpp}: source code - all libraries reside here
+\subitem \texttt{src\_cpp/lib}: location of all compiled libraries in C++ and Fortran
+\subitem \texttt{src\_cpp/apps}: command line utilities for performing various UQ tasks (source codes)
+\subitem \texttt{src\_cpp/bin}: command line utilities for performing various UQ tasks (executables)
+\item \texttt{examples\_cpp}: example codes and scripts
+\subitem \texttt{examples\_cpp/uq\_surr}: current set of scripts that automates the forward UQ task utilizing the command line \texttt{apps} above.
+\end{itemize}
+
+\section{Forward UQ: surrogate construction and global sensitivity analysis}
+\subsection*{Theory}
+See the central Manual.
+
+\input{bash_old}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

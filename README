@@ -1,0 +1,52 @@
+                  UQ Toolkit version 2.0
+
+The result of many years of contributions by the following people:
+
+Bert Debusschere
+Khachik Sargsyan
+Alen Alexanderian
+Cosmin Safta
+Maher Salloum
+Omar Knio
+Habib Najm
+Roger Ghanem
+Helgi Adalsteinsson
+
+based on input by and collaboration with many others ... 
+
+Contact: Bert Debusschere, bjdebus@sandia.gov
+
+See the files LICENSE, COPYING, and COPYING.LESSER for the licensing information
+
+See the pdf file UQTk_manual.pdf for a manual on UQTk. For a brief summary: compilation
+instructions are provided below.
+
+Requirements:
+* For the C++ libraries: a C++ and Fortran compiler
+* For the Matlab codes: Matlab license
+* For the examples that use the C++ libraries: Python 2.7, Numpy, SciPy, Matplotlib
+                                               Expat library for processing xml input files
+
+Compilation instructions for the C++ library:
+
+    1) Define the environment variable UQTK_SRC; for example "setenv UQTK_SRC $HOME/uqtk_dist/working" if
+       you are using the csh or tcsh shell
+    2) Go to "uqtk_src/working/config" and copy one of "config.*" files to "config.site"
+       For example for compiling with gnu compilers, copy "config.gnu" to "config.site"
+       For intel compilers on a Mac, take a look at "config.auroch". If compilers are installed similarly
+       on your machine then use that config file.
+       If not, adjust the path to intel libraries on your machine and rename the config file accordingly
+    3) Go to "uqtk_src/working/src_cpp" and type make
+
+Directory Structure
+
+config         : C++ configuration files
+src_cpp        : C++ source code
+examples_cpp   : C++ examples for many commonly used UQ operations: forward propagation, inference, ... 
+                 along with some tutorial material in pdf format
+doc_cpp        : Doxygen generated documentation for C++ code
+pyUQTk         : Python tools
+
+src_matlab     : Matlab source code
+examples_matlab: Matlab examples
+

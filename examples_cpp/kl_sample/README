@@ -1,0 +1,29 @@
+Various C++ example codes and python scripts for 1D/2D KL expansions examples. See "kl_example.pdf"
+for examples and usage info.
+
+List of files:
+
+PDF:
+  kl_example.pdf: examples and usage info
+C++:
+  1. kl_sample.cpp: example code for KL expansions of 1D random fields
+     - kl_sample.h: header file
+  2. kl_sample2D.cpp: example code for KL expansions for 2D random fields on
+     structured grids
+     - kl_sample2D.h: header file
+  3. kl_sample2Du.cpp: example code for KL expansions for 2D random fields on
+     unstructured grids.
+ 
+Bash scripts:
+  4. run1D.sh: ensemble of wrappers for running KL expansions of 1D random fields
+               type "./run1D.sh" for usage info
+  5. run2D.sh: ensemble of wrappers for running KL expansions of 2D random fields
+               type "./run2D.sh" for usage info
+
+Python scripts:
+  6. mkplots.py: creates 1D/2D plots of random field samples, covariance matrices,
+                 KL eigenvalues and KL modes
+  7. pl2dstr.py: plots 2D structured grid
+  8. pl2Dustr.py: plots 2D unstructured grid
+  9. pyutils.py: various python utilities needed by plotting scripts
+

@@ -1,0 +1,257 @@
+\def\btodo{\color{red}}
+\def\etodo{\normalcolor\xspace}
+
+\def\bzap{\color{black}}
+\def\ezap{\normalcolor}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\derivd}{\mathrm{d}}
+\newcommand{\invisible}[1]{}
+
+
+\usepackage{amsbsy}
+\def\bu{\boldsymbol{u}}
+\def\bv{\boldsymbol{v}}
+\def\bw{\boldsymbol{w}}
+\def\w{\underline{w}}
+\def\u{\underline{u}}
+\def\v{\underline{v}}
+\def\n{\underline{n}}
+\def\k{\underline{k}}
+
+\def\TT{\mathrm{T}}
+\def\GG{\mathrm{G}}
+\def\SS{\mathrm{S}}
+\def\VV{\mathrm{V}}
+
+
+\def\co2{{\rm CO}_2}
+
+\def\H{{\rm H}}
+\def\Hp{{\rm H}^+}
+\def\pH{{\rm pH}}
+\def\P{{\rm P}}
+\def\D{{\rm D}}
+\def\I{{\rm I}}
+\def\R{{\rm R}}
+\def\L{{\rm L}}
+\def\OH{\rm OH}
+\def\OHm{{\rm OH}^-}
+\def\chemrightarrow#1#2{\,\,\,\smash{\mathop{\longrightarrow}\limits^{#1}_{#2}}\,\,\,}
+\def\chemequilarrow#1#2{\,\,\,\smash{\mathop{\longleftrightarrow}\limits^{#1}_{#2}}\,\,\,}
+\def\Pa{{\rm H}_3{\rm PO}_4}
+\def\Pb{{\rm H}_2{\rm PO}_4^{-}}
+\def\Pc{{\rm H}{\rm PO}_4^{2-}}
+\def\Pd{{\rm PO}_4^{3-}}
+\def\cHp{[\H^+]}
+\def\cPa{[\Pa]}
+\def\cPb{[\Pb]}
+\def\cPc{[\Pc]}
+\def\cPd{[\Pd]}
+\def\K{{\rm K}}
+\def\Kp{{\rm K}^+}
+\def\P{{\rm P}}
+\def\Q{{\rm Q}}
+\def\O{{\rm O}}
+\def\E{{\rm E}}
+\def\G{{\rm G}}
+\def\R{{\rm R}}
+\def\N{{\rm N}}
+\def\U{{\rm U}}
+
+\newenvironment{redItemize} { \begin{list}
+{\color{red}$\bullet$\color{black}}
+{ \setlength{\rightmargin}{\leftmargin} \setlength{\itemsep}{0in} } }{ \end{list} }
+
+%
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bri}{\begin{redItemize}}
+\newcommand{\eri}{\end{redItemize}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\p}{\partial}
+\newcommand{\ttt}{\tilde}
+\newcommand{\lam}{\lambda}
+%
+%\def\pc{polynomial chaos}
+%\def\Pc{Polynomial chaos}
+%\def\pcs{polynomials chaoses}
+%\def\Pcs{Polynomials chaoses}
+%\def\KL{Karhunen-Loeve}
+\def\psii{\Psi_i}
+\def\psik{\Psi_k}
+\def\psij{\Psi_j}
+\def\vnabla{\Vector \nabla}
+\def\vy{\Vector y}
+\def\ds{\displaystyle}
+\def\td{\tilde \delta}
+\def\tL{\tilde L}
+\def\tU{\tilde U}
+%\def\tt{\tilde t}
+\def\vF{\Vector F}
+\def\psio{\overline{\psi}}
+\def\tsigma{\overline{\Vector \sigma}}
+\def\tS{\overline{\Vector S}}
+\def\gammao{\overline{\gamma}}
+\def\nablat{\tilde \nabla}
+\def\vut{\tilde \vu}
+\def\Vector#1{\mbox{\boldmath $#1$}}
+\def\psit{\tilde \psi}
+\def\omegat{\tilde \omega}
+\def\gt{\tilde g}
+\def\vS{\Vector S}
+\def\vD{\Vector D}
+\def\omegas{\omega^\star}
+\def\psis{\psi^\star}
+\def\psip{\psi^\phi}
+\def\omegap{\omega^\phi}
+\def\vup{\vu^*}
+\def\vH{{\Vector H}}
+\def\hd{\dot{h}}
+\def\hdd{\ddot{h}}
+\def\tdd{\ddot{\theta}}
+\def\td{\dot{\theta}}
+\def\ad{\dot{\alpha}}
+\def\add{\ddot{\alpha}}
+\def\mom{{\cal T}}
+\def\vGamma{{\Vector \Gamma}}
+\def\vx{{\Vector x}}
+\def\vz{{\Vector z}}
+\def\vy{{\Vector y}}
+\def\vj{{\Vector j}}
+\def\vk{{\Vector k}}
+\def\vt{{\Vector t}}
+\def\ve{{\Vector e}}
+\def\vb{{\Vector b}}
+\def\vs{{\Vector s}}
+\def\vg{{\Vector g}}
+\def\vc{{\Vector c}}
+\def\vC{{\Vector C}}
+\def\vn{{\Vector n}}
+\def\vp{{\Vector p}}
+\def\vr{{\Vector r}}
+\def\vV{{\Vector V}}
+\def\vU{{\Vector U}}
+\def\vUa{{\Vector U}^{(a)}}
+\def\vUl{{\Vector U}^{(l)}}
+\def\vUs{{\Vector U}^{(s)}}
+\def\vUp{{\Vector U}^{(p)}}
+\def\vX{{\Vector X}}
+\def\vv{{\Vector v}}
+\def\vu{{\Vector u}}
+\def\vQ{{\Vector Q}}
+\def\vP{{\Vector P}}
+\def\vR{{\Vector R}}
+\def\vZ{{\Vector Z}}
+\def\vq{{\Vector q}}
+\def\vI{{\Vector I}}
+\def\vlam{{\Vector \lambda}}
+\def\va{{\Vector a}}
+
+\def\deff{d_{\textrm{eff}}}
+
+\def\yh{{\hat{y}}}
+\def\ch{{\hat{c}}}
+\def\yt{y^{\textrm{true}}}
+\def\ya{y^{\textrm{apx}}}
+\def\ct{c^{\textrm{true}}}
+\def\ca{c^{\textrm{apx}}}
+
+\def\MM{{\cal M}}
+\def\DD{{\cal D}}
+\def\FF{{\cal F}}
+\def\GG{{\cal G}}
+\def\SS{{\cal S}}
+
+
+\def\zetaa{\zeta^{(a)}}
+\def\zetal{\zeta^{(l)}}
+\def\zetas{\zeta^{(s)}}
+\def\zetap{\zeta^{(p)}}
+\def\vom{{\Vector \omega}}
+\def\vtau{{\Vector \tau}}
+\def\veta{{\Vector \eta}}
+\def\vtheta{{\Vector \theta}}
+\def\vsigma{{\Vector \sigma}}
+\def\vSigma{{\Vector \Sigma}}
+\def\vPsi{{\Vector \Psi}}
+\def\vlambda{{\Vector \lambda}}
+\def\vxi{{\Vector \xi}}
+\def\vmu{{\Vector \mu}}
+\def\vY{{\Vector Y}}
+\def\vchi{{\Vector \chi}}
+\def\vzeta{{\Vector \zeta}}
+\def\vmu{{\Vector \mu}}
+\def\F{{\rm\bf F}}
+\def\sech{{\rm sech}}
+\def\funnyzeta{\varsigma}
+\def\tQ{\stackrel{\ldots}{Q}}
+%
+\def\Re{{\rm Re}}
+\def\Pe{{\rm Pe}}
+\def\Ec{{\rm Ec}}
+\def\Pr{{\rm Pr}}
+\def\rf{{\rm ref}}
+\def\eps{{\varepsilon}}
+\def\ep{\epsilon'}
+\def\O{{\rm O}}
+\def\1{{\rm 1}}
+\def\so{^{\rm (0)}}
+\def\s1{^{\rm (1)}}
+\def\d{{\rm d}}
+\def\ttm{^{{\rm ttm}}}
+\def\img{^{\rm im}}
+\def\si{^{\rm si}}
+%
+\def\ol{\overline}
+%
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\def\leftpar{\raggedright\leftskip=0.0cm\hsize=8.0cm}
+\def\rightpar{\raggedright\leftskip=12cm}
+%------------------------------------------------------------------------------
+\def\fig#1#2{
+      \hbox{
+            \hskip-2.0cm
+            \psfig{file=eps/#1.eps,height=9.0cm}
+            \hskip-3.2cm
+            \psfig{file=eps/#2.eps,height=9.0cm}
+            \hskip-8.0cm
+      }
+}
+%------------------------------------------------------------------------------
+\def\cap#1#2
+{\tenpoint\vskip-0.5cm\parindent=0pt
+{\hskip-0.0cm\leftpar {#1} \par}
+\vskip -\prevgraf \baselineskip
+{\hskip-3.0cm\rightpar {#2} \par}
+}
+
+
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\ben}{\[}
+\newcommand{\een}{\]}
+
+\def\argc{\underset{\vc}{\operatorname{argmin}}\:}
+
+
+\lstnewenvironment{ShellCmd}{%
+ %
+ \scriptsize%
+ \lstset{language=sh,%
+ backgroundcolor=\color{shadecolor},%
+ frame=none,%
+ numbers=none,%
+ tabsize=2}%
+}{%
+ \normalsize%
+}
+
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{purple}{rgb}{1,0,1}

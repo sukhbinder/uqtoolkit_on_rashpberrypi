@@ -1,0 +1,15 @@
+Set of examples using the C++ version of UQTk
+
+ops       : Illustrates basic operations on random variables described with PCEs
+surf_rxn  : Performs intrusive and non-intrusive UQ in a simple set of ODEs describing
+            a surface reaction model. Also has example on parameter inference for the same ODE set.
+kl_sample : Illustrates the construction of a Karhunen-Loeve expansion from a set of samples
+            of the corresponding stochastic process
+pce_bcs   : Illustrates Bayesian Compressive Sensing to build a sparse PCE for a random set of samples
+test_quad : Quadrature testing routines
+uq_surr   : Set of scripts to compute surrogates for and perform sensitivity analysis on 
+            models that are run as black-box codes. These scripts rely on UQTk apps (src_cpp/apps)
+line_infer: Bayesian inference of a line from noisy data
+
+================
+test_infer: obsolete: to be removed

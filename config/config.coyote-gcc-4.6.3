@@ -1,0 +1,31 @@
+# Site specific compilation options.
+# Customize this file for your specific site, and then copy it over to a file named config.site
+
+GCCVER=/usr/local/gcc/4.6.3
+GCCLIB=$(GCCVER)/lib
+
+F77 = LD_LIBRARY_PATH=$(GCCLIB):/usr/local/lib $(GCCVER)/bin/gfortran
+FC  = LD_LIBRARY_PATH=$(GCCLIB):/usr/local/lib $(F77)
+CC  = LD_LIBRARY_PATH=$(GCCLIB):/usr/local/lib $(GCCVER)/bin/gcc 
+CXX = LD_LIBRARY_PATH=$(GCCLIB):/usr/local/lib $(GCCVER)/bin/g++ 
+CPP = LD_LIBRARY_PATH=$(GCCLIB):/usr/local/lib $(GCCVER)/bin/gcc 
+OPT = 2
+FFLAGS   = -g0 -ffixed-line-length-none -fno-second-underscore -Wall -x f77-cpp-input -O$(OPT)
+CCFLAGS  = -g0 -Wall -O$(OPT)
+CXXFLAGS = -g0 -Wall -O$(OPT)
+FCLIB    = -lgfortran
+# Set FTNNAME to "wsu" if fortran appends a single underscore to function names
+#                "wdu" if it appends a double underscore
+FTNNAME = wsu
+DFLAGS  = 
+LDFLAGS = 
+# To use other versions of BLAS, LAPACK or SLATEC, just change the macros below
+# As a disclaimer: the Makefiles have only been tested with the versions of these
+# libraries that come with the UQTk distribution.
+BLAS   = uqtkblas
+LAPACK = uqtklapack
+SLATEC = uqtkslatec
+#
+RANLIB = ranlib
+AR = ar cr
+

@@ -1,0 +1,9 @@
+This directory contains a set of files to specify site-specific
+configuration options.
+
+Before compiling, use one of the templates, e.g. config.gnu, customize it as needed,
+and copy it over to config.site
+
+ - For coyote: use 'config.gnu' for default gnu compilers, currently v. 4.1.2
+               use 'config.coyote-gcc-4.6.3' for gnu compilers v. 4.6.3
+

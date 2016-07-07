@@ -1,0 +1,36 @@
+\form#0:\[ F(t,\theta) = \left < F(t,\theta) \right >_{\theta} + \sum_{k=1}^{\infty} \sqrt{\lambda_k} f_k(t) \xi_k\]
+\form#1:$C$
+\form#2:$t$
+\form#3:$w$
+\form#4:\[ \int C(s,t)f(t)dt=\lambda f(s) \rightarrow \sum w_j C(s_i,t_j) f_k(t_j) = \lambda_k f_k(s_i)\]
+\form#5:\[A g=\lambda g \]
+\form#6:$A=W K W$
+\form#7:$g=Wf$
+\form#8:$W$
+\form#9:$W_{ii}=\sqrt{w_i}$
+\form#10:$K_{ij}=Cov(t_i,t_j)$
+\form#11:$\lambda_k$
+\form#12:$f_k=W^{-1}g_k$
+\form#13:$F(t,\theta_l)$
+\form#14:$\xi_k$
+\form#15:$F$
+\form#16:$f_k$
+\form#17:\[ \left.\xi_k\right\vert_{\theta_l}=\left <F(t,\theta_l)-\left < F(t,\theta) \right >_{\theta}, f_k(t) \right >_t/\sqrt{\lambda_k} \]
+\form#18:\[ \left.\xi_k\right\vert_{\theta_l}=\sum_{i=1}^{N_p} w_i\left(F(t_i,\theta_l)-\left < F(t_i,\theta) \right >_{\theta} \right) f_k(t_i)/\sqrt{\lambda_k} \]
+\form#19:\[ F(t_i,\theta_l) = \left < F(t_i,\theta) \right >_{\theta} + \sum_{k=1}^{nKL} \sqrt{\lambda_k} f_k(t_i) \left. \xi_k\right\vert_{\theta_l} \]
+\form#20:$j+i\times ny$
+\form#21:$n\times 1$
+\form#22:$ C=A\backslash B$
+\form#23:$y=\alpha Ax$
+\form#24:$\left[n\times m\right]$
+\form#25:$m$
+\form#26:$n$
+\form#27:$y=\alpha A^Tx$
+\form#28:$\left[m\times n\right]$
+\form#29:$C=\alpha AB$
+\form#30:$m\times m$
+\form#31:$C=\alpha A^TB$
+\form#32:$y_i=\alpha x_i^ip$
+\form#33:$\left[n\times n\right]$
+\form#34:$A_{n,i}=A_{i,n}=x_i$
+\form#35:$A_{n,n}=scal$
